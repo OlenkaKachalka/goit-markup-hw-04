@@ -183,6 +183,16 @@ body {
 }
 
 /*--------------------------------SLOGAN------------------------------------------*/
+.slogan {
+    background-color: #2F303A;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/q.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    background-position: center;
+    margin: 0 auto;
+}
+
 .slogan-title {
     font-weight: 900;
     font-size: 44px;
@@ -214,14 +224,9 @@ body {
 }
 
 .slogan-container {
-  background-color: #2F303A;
   padding-top: 200px; 
-  padding-bottom: 200px;
-  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/q.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+  padding-bottom: 200px;}
+  
 
 
 /*--------------------------ABOUT--------------------*/
@@ -315,7 +320,7 @@ body {
 /*-----isnt neccessary----------*/
 .team {
     background-color:#F5F4FA;
-    padding-bottom: 124px;
+    padding-bottom: 94px;
     padding-top: 94px;
 }
 
@@ -536,6 +541,11 @@ body {
     outline: 1px solid #EEEEEE;
 }
 
+.portfolio-item:hover,
+.portfolio-item:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+}
+
 .portfolio-item:nth-child(3n+2) {
      margin-right: 30px;
      
@@ -577,8 +587,10 @@ body {
 }
 
 .portfolio-btn:focus {
-    color: var(--accent-color);
+    background-color:var(--accent-color);
+    color: white;
     cursor: pointer;
+    outline: none;
 }
 
 
